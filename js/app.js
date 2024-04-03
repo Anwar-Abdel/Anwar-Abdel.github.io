@@ -6,7 +6,7 @@
 
 /*==================== scroll reveal ====================*/
 /*==================== typed js ====================*/
-
+/*
 // Header data
 const headerData = {
     logoText: 'Portfolio',
@@ -145,4 +145,4 @@ const sectionData = [
   
   // Call createSections function when the DOM content is loaded
   document.addEventListener('DOMContentLoaded', createSections);
-  
+  */
