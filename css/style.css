@@ -106,6 +106,10 @@ body {
     /* width: 900px; */
 }
 
+.home-content span {
+    color: var(--main-color);
+}
+
 .social-media a {
     display: inline-flex;
     justify-content: center;
@@ -113,7 +117,7 @@ body {
     width: 4rem;
     height: 4rem;
     background: transparent;
-    border: 2rem solid var(--main-color);
+    border: .2rem solid var(--main-color);
     font-size: 2rem;
     color: var(--second-bg-color);
     margin: 3rem 1.5rem 3rem 0;

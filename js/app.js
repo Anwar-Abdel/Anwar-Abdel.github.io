@@ -67,3 +67,82 @@ function createHeader() {
 // Call createHeader function when the DOM content is loaded
 document.addEventListener('DOMContentLoaded', createHeader);
 
+const sectionData = [
+    {
+      id: 'home',
+      class: 'home',
+      content: `
+        <div class="home-content">
+          <h3>Hello, It's Me</h3>
+          <h1>Jamie Bond</h1>
+          <h3>And I'm a <span>Frontend Engineer</span></h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis itaque voluptatem harum libero odit magni
+            cumque beatae sed sint incidunt! Ipsam quibusdam, dolorum vitae atque obcaecati impedit cumque eligendi sequi?
+          </p>
+          <div class="social-media">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+          </div>
+          <a href="#" class="btn">Download CV</a>
+        </div>
+        <div class="home-img">
+          <img src="./images/personal-portfolio-pic.png" alt="">
+        </div>
+      `
+    },
+    {
+      id: 'about',
+      class: 'about',
+      content: `
+        <div class="about-content">
+          <!-- Add your about content here -->
+        </div>
+      `
+    },
+    {
+      id: 'services',
+      class: 'services',
+      content: `
+        <div class="services-content">
+          <!-- Add your services content here -->
+        </div>
+      `
+    },
+    {
+      id: 'portfolio',
+      class: 'portfolio',
+      content: `
+        <div class="portfolio-content">
+          <!-- Add your portfolio content here -->
+        </div>
+      `
+    },
+    {
+      id: 'contact',
+      class: 'contact',
+      content: `
+        <div class="contact-content">
+          <!-- Add your contact content here -->
+        </div>
+      `
+    }
+  ];
+  
+  // Function to create section elements and append them to the body
+  function createSections() {
+    const body = document.body;
+  
+    sectionData.forEach(section => {
+      const sectionElement = document.createElement('section');
+      sectionElement.setAttribute('id', section.id);
+      sectionElement.classList.add(section.class);
+      sectionElement.innerHTML = section.content;
+      body.appendChild(sectionElement);
+    });
+  }
+  
+  // Call createSections function when the DOM content is loaded
+  document.addEventListener('DOMContentLoaded', createSections);
+  
