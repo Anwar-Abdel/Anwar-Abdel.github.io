@@ -4,7 +4,7 @@ let navbar = document.querySelector('.navbar');
 
 menuIcon.onClick = () => {
   menuIcon.classList.toggle('bx-x');
-  navbar.classList.toggle('actove');
+  navbar.classList.toggle('active');
 }
 /*==================== scroll sections active link ====================*/
 
